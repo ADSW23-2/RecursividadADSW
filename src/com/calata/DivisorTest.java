@@ -12,14 +12,14 @@ import static org.junit.Assert.*;
 public class DivisorTest {
 
 
-    List<Integer> dividendosPrueba = new ArrayList<>();
-    List<Integer> divisoresPrueba = new ArrayList<>();
+    private List<Integer> dividendosPrueba = new ArrayList<>();
+    private List<Integer> divisoresPrueba = new ArrayList<>();
 
     @Before
     public void setUp(){
 
         //Llenamos las listas
-        for(Integer i = new Integer(1);i < 10000;i++){
+        for(Integer i = 1; i < 10000; i++){
             dividendosPrueba.add(i);
             if(i <= 1000){
                 divisoresPrueba.add(i);
@@ -33,7 +33,7 @@ public class DivisorTest {
     public void dividirRecursivo() throws Exception {
         for(Integer dividendos : dividendosPrueba){
             for(Integer divisores : divisoresPrueba){
-                assertEquals((int)(dividendos/divisores),Divisor.dividirRecursivo(dividendos,divisores));
+                assertEquals(dividendos/divisores,Divisor.dividirRecursivo(dividendos,divisores));
             }
         }
 
@@ -43,7 +43,7 @@ public class DivisorTest {
     public void dividirIterativo() throws Exception {
         for(Integer dividendos : dividendosPrueba){
             for(Integer divisores : divisoresPrueba){
-                assertEquals((int)(dividendos/divisores),Divisor.dividirIterativo(dividendos,divisores));
+                assertEquals(dividendos/divisores,Divisor.dividirIterativo(dividendos,divisores));
             }
         }
     }
