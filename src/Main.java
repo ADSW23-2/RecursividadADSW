@@ -19,13 +19,13 @@ public class Main {
         System.out.printf("El Resuktado es: %b\n", Busqueda.busquedaBinariaLista(misNumeros,1,5,5)); //true
         System.out.printf("El Resuktado es: %b\n", Busqueda.busquedaBinariaLista(misNumeros,0,misNumerosAr.length,50)); //false */
 
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,0,misNumeros.length,-4)); //false
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,0,misNumeros.length,5)); //true
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,0,2,5)); //false
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,0,1,5)); //false
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,6,misNumeros.length,5)); //false
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,1,5,5)); //true
-        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinariaCalata(misNumeros,0,misNumeros.length,50)); //false
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,0,misNumeros.length,-4)); //false
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,0,misNumeros.length,5)); //true
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,0,2,5)); //false
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,0,1,5)); //false
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,6,misNumeros.length,5)); //false
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,1,5,5)); //true
+        System.out.printf("El Resuktado es: %d\n", Busqueda.busquedaBinaria(misNumeros,0,misNumeros.length,50)); //false
 
     }
 }

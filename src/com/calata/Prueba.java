@@ -9,11 +9,13 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 
-public class DivisorTest {
+public class Prueba {
 
 
     private List<Integer> dividendosPrueba = new ArrayList<>();
     private List<Integer> divisoresPrueba = new ArrayList<>();
+    private int[] numeros = {1,2,3,4,5,6,9,10,48};
+    private int[] numerosEncontrar = {-4,5,50};
 
     @Before
     public void setUp(){
@@ -28,6 +30,15 @@ public class DivisorTest {
 
     }
 
+    @Test
+    public void busquedaBinaria() throws Exception {
+        assertEquals(-1,Busqueda.busquedaBinaria(numeros,0,numeros.length-1,numerosEncontrar[0])); //No Está
+        assertEquals(-1,Busqueda.busquedaBinaria(numeros,4,numeros.length-3,numerosEncontrar[0])); //No está
+        assertEquals(4,Busqueda.busquedaBinaria(numeros,0,numeros.length-1,numerosEncontrar[1])); //Está
+        assertEquals(4,Busqueda.busquedaBinaria(numeros,0,numeros.length/2,numerosEncontrar[1])); //Está
+        assertEquals(-1,Busqueda.busquedaBinaria(numeros,0,(numeros.length-2)/2,numerosEncontrar[1])); //No está
+        assertEquals(-1,Busqueda.busquedaBinaria(numeros,numeros.length-2,numeros.length-1,numerosEncontrar[2])); //Está
+    }
 
     @Test
     public void dividirRecursivo() throws Exception {
@@ -39,7 +50,7 @@ public class DivisorTest {
 
     }
 
-    @Test
+    @org.junit.Test
     public void dividirIterativo() throws Exception {
         for(Integer dividendos : dividendosPrueba){
             for(Integer divisores : divisoresPrueba){

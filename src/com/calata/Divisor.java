@@ -1,8 +1,5 @@
 package com.calata;
 
-/**
- * Created by jcala on 15/02/2017.
- */
 public class Divisor{
 
     public static int dividirRecursivo(int dividendo, int divisor){
@@ -15,14 +12,12 @@ public class Divisor{
     }
 
     public static int dividirIterativo(int dividendo,int divisor){
-        int resto = dividendo - divisor;
-        int endo = dividendo;
-        int isor = divisor;
+        int resto = 0;
         int cocciente = 0;
-        while(endo-isor >= 0){
+        while(dividendo-divisor >= 0){
             cocciente++;
-            resto = endo - isor;
-            endo = resto;
+            resto = dividendo - divisor;
+            dividendo = resto;
         }
         return cocciente;
     }
