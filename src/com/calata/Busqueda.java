@@ -13,9 +13,8 @@ public class Busqueda {
         }
         if (list[medio] > value) {
             return busquedaBinaria(list,first,medio-1,value);
-        }else{
-            return busquedaBinaria(list,medio+1,last,value);
         }
+        return busquedaBinaria(list,medio+1,last,value);
 
     }
 }

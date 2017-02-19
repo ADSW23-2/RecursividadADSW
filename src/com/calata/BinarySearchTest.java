@@ -9,7 +9,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 
-public class Prueba {
+public class BinarySearchTest {
 
 
     private List<Integer> dividendosPrueba = new ArrayList<>();
@@ -44,7 +44,7 @@ public class Prueba {
     public void dividirRecursivo() throws Exception {
         for(Integer dividendos : dividendosPrueba){
             for(Integer divisores : divisoresPrueba){
-                assertEquals(dividendos/divisores,Divisor.dividirRecursivo(dividendos,divisores));
+                assertEquals(dividendos/divisores, Division.dividirRecursivo(dividendos,divisores));
             }
         }
 
@@ -54,7 +54,7 @@ public class Prueba {
     public void dividirIterativo() throws Exception {
         for(Integer dividendos : dividendosPrueba){
             for(Integer divisores : divisoresPrueba){
-                assertEquals(dividendos/divisores,Divisor.dividirIterativo(dividendos,divisores));
+                assertEquals(dividendos/divisores, Division.dividirIterativo(dividendos,divisores));
             }
         }
     }

@@ -1,14 +1,13 @@
 package com.calata;
 
-public class Divisor{
+public class Division {
 
     public static int dividirRecursivo(int dividendo, int divisor){
         int resto = dividendo-divisor;
         if(resto < 0){
             return 0;
-        }else{
-            return 1 + dividirRecursivo(resto,divisor);
         }
+        return 1 + dividirRecursivo(resto,divisor);
     }
 
     public static int dividirIterativo(int dividendo,int divisor){

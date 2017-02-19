@@ -1,13 +1,10 @@
 import com.calata.Busqueda;
-import com.calata.Divisor;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import com.calata.Division;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.printf("El Resuktado es: %d\n",Divisor.dividirIterativo(17,8));
+        System.out.printf("El Resuktado es: %d\n", Division.dividirIterativo(17,8));
         int[] misNumeros = {1,2,3,4,5,6,9,10,49};
         //ArrayList misNumeros = new ArrayList<>(Arrays.asList(misNumerosAr));
         //System.out.println(misNumeros.subList(0,4));
